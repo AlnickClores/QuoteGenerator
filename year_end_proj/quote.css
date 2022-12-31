@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root{
+    --bg-color: #eaeaeb;
+    --bg2-color: #f4f4f5;
+    --font-color: black;
+}
+.dark-theme{
+    --bg-color: #1e2833;
+    --bg2-color: #222832;
+    --font-color: rgba(255, 255, 255, 0.884);
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+header{
+    display: grid;
+    justify-items: end;
+    padding: 30px 15%;
+}
+header img{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+.container{
+    text-align: center;
+}
+.title{
+    padding: 15px 0;
+}
+.title h1{
+    font-size: 3rem;
+}
+.quoteContainer{
+    margin-top: 75px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 15px 12%;
+    font-size: 2rem;
+    background-color: var(--bg2-color);
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 1px;
+}
+#quote{
+    line-height: 50px;
+}
+.quoteContainer button{
+    margin: 20px;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+}
+footer p{
+    text-align: center;
+    font-size: 13px;
+}
+footer a{
+    color: var(--font-color);
+}
+footer a:hover{
+    opacity: .7;
+}
+
+@media screen and (max-width: 767px){
+    .title h1{
+        font-size: 2rem;
+    }
+    header img{
+        height: 25px;
+        width: 25px;
+        cursor: pointer;
+        align-self: flex-end;
+    }
+    .quoteContainer{
+        margin-top: 40px;
+        margin-left: 15%;
+        margin-right: 15%;
+        padding: 15px 5%;
+        background-color: var(--bg2-color);
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 15px;
+    }
+    .quoteContainer button{
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+    #quote{
+        line-height: 25px;
+        font-size: 1rem;
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+    }
+    footer p{
+        text-align: center;
+        font-size: 13px;
+    }
+    footer a{
+        color: var(--font-color);
+    }
+    footer a:hover{
+        opacity: .7;
+    }
+}
